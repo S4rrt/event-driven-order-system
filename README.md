@@ -75,23 +75,27 @@ event-driven-order-system
 ### 1. Запуск инфраструктуры
 
 Запустить Kafka, Zookeeper и PostgreSQL:
+```
 docker compose up -d
-
+```
 ---
 
 ### 2. Запуск API сервиса
+```
 go run cmd/api/main.go
-
+```
 API будет доступен по адресу:
+```
 http://localhost:8080
-
+```
 ---
 
 ### 3. Запуск Worker
 
 Worker читает сообщения из Kafka и обрабатывает их параллельно с использованием goroutines.
+```
 go run cmd/worker/main.go
-
+```
 ---
 
 ## Пример запроса
@@ -129,3 +133,4 @@ worker 3 processed order {UserID:1 Product:iphone Price:1000}
 - Idempotent consumer
 - Graceful shutdown
 - Метрики и мониторинг
+
