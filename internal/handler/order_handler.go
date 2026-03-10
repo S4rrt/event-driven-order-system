@@ -2,9 +2,9 @@ package handler
 
 import (
 	"encoding/json"
+	"event-driven-order-system/internal/model"
+	"event-driven-order-system/internal/service"
 	"net/http"
-	"order-system/internal/model"
-	"order-system/internal/service"
 )
 
 type OrderService struct {

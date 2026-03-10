@@ -2,12 +2,12 @@ package main
 
 import (
 	"database/sql"
+	"event-driven-order-system/internal/handler"
+	"event-driven-order-system/internal/kafka"
+	"event-driven-order-system/internal/repository"
+	"event-driven-order-system/internal/service"
 	"log"
 	"net/http"
-	"order-system/internal/handler"
-	"order-system/internal/kafka"
-	"order-system/internal/repository"
-	"order-system/internal/service"
 )
 
 func main() {

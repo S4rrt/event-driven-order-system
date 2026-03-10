@@ -2,7 +2,7 @@ package repository
 
 import (
 	"database/sql"
-	"order-system/internal/model"
+	"event-driven-order-system/internal/model"
 )
 
 type OrderRepository struct {

@@ -2,9 +2,9 @@ package service
 
 import (
 	"encoding/json"
-	"order-system/internal/kafka"
-	"order-system/internal/model"
-	"order-system/internal/repository"
+	"event-driven-order-system/internal/kafka"
+	"event-driven-order-system/internal/model"
+	"event-driven-order-system/internal/repository"
 )
 
 type OrderService struct {
