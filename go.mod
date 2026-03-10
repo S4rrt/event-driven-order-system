@@ -1,4 +1,4 @@
-module event-driven-order-system
+module order-system
 
 go 1.25.5
 
